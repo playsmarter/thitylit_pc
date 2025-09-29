@@ -1,45 +1,56 @@
-body, html {
-    margin: 0;
-    padding: 0;
+html, body {
+  margin: 0;
+  padding: 0;
 }
+
+.wrap {
+  margin: 0;
+  padding: 0;
+}
+
 .landing {
-    width: 100%;
-    height: auto;
-    /* display: flex; */
-    flex-direction: column;
-    position: relative;
-    display: block;
-    margin: 0;        
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;    /* 이미지 가운데 정렬 */
+  line-height: 0;        /* 이미지 아래 생기는 글자 공간 제거 */
+  max-width: 100%;
+
+}
+.landing .none-img{
+  /* max-width: 100%; */
+}
+
+.landing img {
+  display: inline-block; /* block으로 하면 화면 꽉 차므로 inline-block 유지 */
+  width: 100%;           /* 원래 사이즈 */
+  height: auto;
+  max-width: 100%;       /* 화면보다 크면 줄어듦 */
+  margin: 0;
+  padding: 0;
+  vertical-align: top;   /* inline-block의 기본 baseline 여백 제거 */
 }
 
 .landing .link-img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
 }
-.landing .link-img img{
-    display: block; 
-    max-width: 100%;
-    height: auto;    
+.landing a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  vertical-align: top;
 }
-.landing img { display:block; }
 
-.landing {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.landing a img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
 }
-.landing a{
-    display: block;
-}
-.landing .link-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+
 
 /* 버튼 */
 .container a,
